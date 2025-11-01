@@ -1,7 +1,15 @@
-.card {
-  /* color used to softly clip top and bottom of the .words container */
-  --bg-color: #111;
-  background-color: var(--bg-color);
-  padding: 1rem 2rem;
-  border-radius: 1.25rem;
+.image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: moveLeft 15s linear infinite;
+}
+
+@keyframes moveLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
